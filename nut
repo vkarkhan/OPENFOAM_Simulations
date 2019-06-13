@@ -28,13 +28,13 @@ boundaryField
     }
     outlet
     {
-        type            calculated;
+        type            calculated;  //nutkWallFunction; //calculated;
         value           uniform 0;
     }
     topWall
     {
-        type            calculated;
-        value           uniform 0;
+        type            nutkWallFunction;
+        value           uniform 0;    
     }
     obstacle
     {

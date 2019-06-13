@@ -16,26 +16,25 @@ FoamFile
 
 dimensions      [1 -1 -2 0 0 0 0];
 
-internalField   uniform 6.67;
+internalField   uniform 10;
 
 boundaryField
 {
     inlet
     {
         type           fixedValue;
-	value	       uniform 13.33; 
+	value	       uniform 15; 
     }
 
     outlet
     {
         type            fixedValue;
-        value           $internalField;
+        value           uniform 10;
     }
 
     topWall
     {
-        type            fixedValue;
-	value		$internalField;
+        type            zeroGradient; //fixedValue; //zeroGradient;
     }
 
     obstacle

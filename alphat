@@ -33,8 +33,9 @@ boundaryField
     }
     topWall
     {
-        type            calculated;
-        value           $internalField;
+        type            compressible::alphatWallFunction;
+        Prt             0.85;
+        value           $internalField;    
     }
     obstacle
     {

@@ -23,7 +23,7 @@ thermoType
     thermo          hConst;
     equationOfState perfectGas;
     specie          specie;
-    energy          sensibleInternalEnergy;
+    energy          sensibleInternalEnergy; //sensibleEnthalpy;
 }
 
 mixture
@@ -34,13 +34,15 @@ mixture
     }
     thermodynamics
     {
-        Cp          1007;
+        Cp          1850;
         Hf          0;
     }
     transport
     {
         As          1.4792e-06;
         Ts          116;
+	mu          1.34e-5;
+	
     }
 }
 

@@ -22,18 +22,21 @@ boundaryField
 {
     inlet
     {
-        type            fixedValue;
-        value           uniform (0 0 0);
+        type           fixedValue;
+        value          uniform (0 0 0);
     }
 
     outlet
     {
         type            zeroGradient;
+        //type                matchedFlowRateOutletVelocity;
+        //inletPatch          inlet;
+        //value               uniform (2 0 0);
     }
 
     topWall
     {
-        type            zeroGradient;
+        type            noSlip; //zeroGradient; //noSlip;
     }
 
     obstacle

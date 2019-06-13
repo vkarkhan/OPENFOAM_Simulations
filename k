@@ -24,7 +24,7 @@ boundaryField
     inlet
     {
         type            fixedValue;
-        value           uniform 0.375;
+        value           $internalField;
     }
     outlet
     {
@@ -32,12 +32,13 @@ boundaryField
     }
     topWall
     {
-        type            zeroGradient;
+        type            kqRWallFunction;
+        value           $internalField;    
     }
     obstacle
     {
         type            kqRWallFunction;
-        value           uniform 0.375;
+        value           $internalField;
     }
 
     bottom
