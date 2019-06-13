@@ -1,5 +1,6 @@
-# freezeDryer
-rhoSimpleFoam for steady state k-epsilon turbulence
+# CFD Simulation of flow of water-vapor in a Freeze Dryer
+
+rhoSimpleFoam is currently used for steady state k-epsilon turbulence
 
 OPENFOAM files for simulating water vapor flow. 
 # Compressible RAS formulation
